@@ -1,4 +1,5 @@
 # Consulta Vehicular – SRI y ANT
+![Captura de la aplicación](docs/app.png)
 
 Sistema web que, a partir del **correo**, el **RUC** y la **placa** de una persona natural:
 
@@ -15,10 +16,11 @@ Como el portal de la **ANT tiene muy baja disponibilidad**, el sistema aplica el
 
 | Nivel | Dónde verlo |
 |---|---|
-| Diagrama Completo | https://s.icepanel.io/Os48xhYAeFsgfA/rEFX |
+| Diagrama Completo | [IcePanel]https://s.icepanel.io/Os48xhYAeFsgfA/rEFX |
 | C1 – Contexto | [IcePanel]https://s.icepanel.io/Os48xhYAeFsgfA/rEFX |
 | C2 – Contenedores | [IcePanel]https://s.icepanel.io/Os48xhYAeFsgfA/pzgF |
-| C3 – Componentes (ms-sri y ms-ant) | [IcePanel]https://s.icepanel.io/Os48xhYAeFsgfA/8UGb | https://s.icepanel.io/Os48xhYAeFsgfA/dPqs|
+| C3 – Componentes (ms-sri) | [IcePanel]https://s.icepanel.io/Os48xhYAeFsgfA/8UGb |
+| C3 – Componentes (ms-ant) | [IcePanel]https://s.icepanel.io/Os48xhYAeFsgfA/dPqs |
 | C4 – Código | [docs/c4-nivel4-codigo.md](docs/c4-nivel4-codigo.md) |
 
 ### Contenedores
