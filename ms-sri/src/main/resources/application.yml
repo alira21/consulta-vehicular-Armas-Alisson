@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    redis:
+      url: ${REDIS_URL}
+      timeout: 2s
+
+app:
+  sri:
+    catastro-url: https://srienlinea.sri.gob.ec/sri-catastro-sujeto-servicio-internet/rest/ConsolidadoContribuyente
+    vehiculo-url: https://srienlinea.sri.gob.ec/sri-matriculacion-vehicular-recaudacion-servicio-internet/rest/BaseVehiculo
+    cache-ttl-horas: 24
