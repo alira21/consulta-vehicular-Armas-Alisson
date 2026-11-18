@@ -1,5 +1,5 @@
 # Consulta Vehicular – SRI y ANT
-![Captura de la aplicación](docs/app.png)
+![Captura de la aplicación](docs/App.png)
 
 Sistema web que, a partir del **correo**, el **RUC** y la **placa** de una persona natural:
 
