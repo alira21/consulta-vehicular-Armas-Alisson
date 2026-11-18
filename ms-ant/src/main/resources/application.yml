@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    redis:
+      url: ${REDIS_URL}
+      timeout: 2s
+
+app:
+  ant:
+    # SIMULADO = se simula que el endpoint funciona (con caidas aleatorias)
+    # REAL     = consulta el portal web de la ANT
+    modo: SIMULADO
+    url: https://consultaweb.ant.gob.ec/PortalWEB/paginas/clientes/clp_grid_citaciones.jsp
+    tasa-fallo: 0.5
+    cache-ttl-dias: 7
+    cb:
+      fallos-para-abrir: 3
+      segundos-abierto: 20
