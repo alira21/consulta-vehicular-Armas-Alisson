@@ -1,0 +1,120 @@
+.app {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  min-height: 100vh;
+}
+
+/* ---------- Panel izquierdo ---------- */
+.panel {
+  background: #fff;
+  border-right: 1px solid #eaeaea;
+  padding: 40px 32px;
+}
+.panel h1 { margin: 0; font-size: 22px; font-weight: 600; }
+.panel .sub { margin: 4px 0 32px; color: #888; font-size: 14px; }
+
+.panel label {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 16px;
+}
+.panel input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fff;
+}
+.panel input:focus { outline: none; border-color: #111; }
+
+.boton {
+  width: 100%;
+  margin-top: 8px;
+  padding: 11px;
+  border: 0;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.boton:disabled { opacity: .5; cursor: wait; }
+
+/* ---------- Panel derecho ---------- */
+.resultados {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 760px;
+}
+
+.vacio { color: #999; margin-top: 8px; }
+
+.seccion {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+.seccion header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.seccion h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #888;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 9px 0;
+  border-top: 1px solid #f3f3f3;
+  font-size: 14px;
+}
+.fila span { color: #777; }
+.fila strong { font-weight: 500; text-align: right; }
+
+.puntos { font-size: 44px; font-weight: 600; margin: 4px 0 8px; }
+.puntos small { font-size: 15px; color: #999; font-weight: 400; }
+
+.fuente {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.fuente.vivo { background: #eef7f0; color: #1f7a3a; }
+.fuente.cache { background: #fdf4e3; color: #9a6a12; }
+
+.nota { font-size: 13px; color: #999; margin: 8px 0 0; }
+.error { color: #b42318; font-size: 14px; margin: 8px 0 0; }
+
+.enlace {
+  margin-top: 12px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #111;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* En pantallas pequeñas, un panel debajo del otro */
+@media (max-width: 760px) {
+  .app { grid-template-columns: 1fr; }
+  .panel { border-right: 0; border-bottom: 1px solid #eaeaea; }
+  .resultados { padding: 24px; }
+}
